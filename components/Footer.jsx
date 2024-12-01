@@ -13,6 +13,9 @@ export default function Footer() {
               <span className="ml-2 text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">ArwaaLabs</span>
             </Link>
             <p className="text-sm text-gray-400">
+              Building Solutions that drive Impact
+            </p>
+            <p className="text-sm text-gray-400">
               Pioneering the future of technology at the intersection of Blockchain, AI, and Education.
             </p>
           </div>
