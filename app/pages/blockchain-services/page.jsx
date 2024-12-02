@@ -92,7 +92,7 @@ export default function BlockchainSolutions() {
                 alt="Blockchain Technology"
                 className="rounded-lg object-cover shadow-lg border-2 border-purple-500"
                 height="400"
-                src="Blokcahin-Solutions?height=400&width=600"
+                src="BlockTech?height=400&width=600"
                 style={{
                   aspectRatio: "600/400",
                   objectFit: "cover",
