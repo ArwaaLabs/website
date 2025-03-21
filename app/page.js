@@ -47,6 +47,13 @@ export default function Home() {
       <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-900 bg-opacity-95 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-purple-900 via-gray-900 to-gray-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center space-y-4 text-center">
+            <div className="mb-8">
+              <img 
+                src="/Logo.png"
+                alt="ArwaaLabs Logo"
+                className="h-20 w-auto" 
+              />
+            </div>
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Welcome to ArwaaLabs
             </h1>
@@ -188,6 +195,80 @@ export default function Home() {
               />
             ))}
           </div>
+          
+          {/* Projects Under Development (Subcategory) */}
+          <h3 className="text-2xl font-bold tracking-tighter text-center mt-16 mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+            Projects Under Development
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 project-card-container">
+            {/* Smart Appointments Card */}
+            <div className="group relative overflow-hidden rounded-lg transition-all duration-500 hover:shadow-[0_0_25px_rgba(168,85,247,0.3)] project-card bg-gray-800/60 border border-purple-500 shadow-lg min-h-[280px] md:min-h-[320px]">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-900/70 to-pink-700/70 z-10 opacity-80 group-hover:opacity-90 transition-opacity"></div>
+              <div className="absolute left-4 top-4 z-20">
+                <div className="text-white/90 transform transition-all duration-500 group-hover:scale-110">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12">
+                    <path d="M8 2v4" className="text-purple-300" />
+                    <path d="M16 2v4" className="text-pink-300" />
+                    <rect x="2" y="6" width="20" height="16" rx="2" className="text-purple-400" />
+                    <path d="M6 10h12" className="text-purple-300" />
+                  </svg>
+                </div>
+              </div>
+              <div className="absolute inset-0 z-20 p-4 pl-20 sm:p-5 sm:pl-20 md:p-6 md:pl-20 flex flex-col justify-end">
+                <div className="space-y-2 sm:space-y-3">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="inline-block px-2 py-1 text-xs font-medium bg-purple-500/70 backdrop-blur-sm text-white rounded-full">Healthcare</span>
+                    <span className="inline-block px-2 py-1 text-xs font-medium bg-pink-500/70 backdrop-blur-sm text-white rounded-full">Appointment System</span>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white">Smart Appointments</h3>
+                  <p className="text-gray-200 text-xs sm:text-sm">A comprehensive healthcare appointment system for Dr. Imran's Healthcare & Diagnostic Centre, providing quality healthcare services with easy online booking.</p>
+                  <div className="pt-2 sm:pt-3">
+                    <a 
+                      href="https://smartappointment.vercel.app/" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="inline-flex items-center text-purple-300 text-sm hover:text-white transition-colors group-hover:underline"
+                    >
+                      Visit Project <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* Musahamat Card */}
+            <div className="group relative overflow-hidden rounded-lg transition-all duration-500 hover:shadow-[0_0_25px_rgba(168,85,247,0.3)] project-card bg-gray-800/60 border border-purple-500 shadow-lg min-h-[280px] md:min-h-[320px]">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-900/70 to-pink-700/70 z-10 opacity-80 group-hover:opacity-90 transition-opacity"></div>
+              <div className="absolute left-4 top-4 z-20">
+                <div className="text-white/90 transform transition-all duration-500 group-hover:scale-110">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-12 h-12">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" className="text-purple-400" />
+                    <path d="M8 12l2 2 4-4" className="text-pink-300" />
+                  </svg>
+                </div>
+              </div>
+              <div className="absolute inset-0 z-20 p-4 pl-20 sm:p-5 sm:pl-20 md:p-6 md:pl-20 flex flex-col justify-end">
+                <div className="space-y-2 sm:space-y-3">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="inline-block px-2 py-1 text-xs font-medium bg-purple-500/70 backdrop-blur-sm text-white rounded-full">Real Estate</span>
+                    <span className="inline-block px-2 py-1 text-xs font-medium bg-pink-500/70 backdrop-blur-sm text-white rounded-full">Blockchain</span>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white">Musahamat</h3>
+                  <p className="text-gray-200 text-xs sm:text-sm">Revolutionizing real estate investments through tokenization, enabling fractional ownership and enhanced liquidity with blockchain technology.</p>
+                  <div className="pt-2 sm:pt-3">
+                    <a 
+                      href="https://www.musahamat.co/" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="inline-flex items-center text-purple-300 text-sm hover:text-white transition-colors group-hover:underline"
+                    >
+                      Visit Project <span className="ml-1 transition-transform group-hover:translate-x-1">→</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -266,11 +347,11 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-2">
                   <MapPin className="text-purple-400" />
-                  <span className="text-gray-300">123 Tech Street, Innovation City, 12345</span>
+                  <span className="text-gray-300">Qazigund Anantnag, J&K India 192221</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Phone className="text-purple-400" />
-                  <span className="text-gray-300">+1 (555) 123-4567</span>
+                  <span className="text-gray-300">+919906841596</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Mail className="text-purple-400" />

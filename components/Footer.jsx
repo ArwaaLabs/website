@@ -9,8 +9,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link className="flex items-center" href="#">
-              <Braces className="h-6 w-6 text-purple-400" />
-              <span className="ml-2 text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">ArwaaLabs</span>
+              <img 
+                src="/Logo.png" 
+                alt="ArwaaLabs Logo"
+                className="h-8 w-auto" 
+              />
+              <span className="ml-2 text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+                ArwaaLabs
+              </span>
             </Link>
             <p className="text-sm text-gray-400">
               Building Solutions that drive Impact

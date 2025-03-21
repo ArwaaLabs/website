@@ -1,6 +1,7 @@
 'use client'
 
 import * as React from "react"
+import Image from "next/image"
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -88,16 +89,12 @@ export default function TechEducation() {
               </Button>
             </div>
             <div className="flex justify-center">
-              <img
+              <Image
                 alt="Tech Education"
+                src="/TechEdu.png"
+                width={600}
+                height={400}
                 className="rounded-lg object-cover shadow-lg border-2 border-purple-500"
-                height="400"
-                src="/placeholder.svg?height=400&width=600"
-                style={{
-                  aspectRatio: "600/400",
-                  objectFit: "cover",
-                }}
-                width="600"
               />
             </div>
           </div>

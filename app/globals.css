@@ -70,3 +70,23 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Remove the logo-image class as it's no longer needed for SVG */
+/* SVGs already handle transparency perfectly */
+
+@media (max-width: 768px) {
+  .project-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .project-card {
+    max-width: 100%;
+    min-height: 350px; /* Ensures consistent height on mobile */
+  }
+  
+  .project-card img {
+    height: 200px; /* More consistent image height on mobile */
+  }
+}
